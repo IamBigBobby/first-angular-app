@@ -120,4 +120,10 @@ getHousingLocationById(id: number): HousingLocation | undefined {
       housingLocation => housingLocation.id === id
   );
 }
+
+submitApplication(firstName: string, lastName: string, email: string) {
+  console.log(
+      `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`
+  );
+}
 }
